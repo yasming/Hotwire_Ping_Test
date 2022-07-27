@@ -11,8 +11,7 @@ class PingsTest < ApplicationSystemTestCase
     click_on "New ping"
 
     click_on "Create new ping"
-
-    assert_text "Ping was successfully created"
+    first('#time')
     click_on "Back to pings"
   end
 end

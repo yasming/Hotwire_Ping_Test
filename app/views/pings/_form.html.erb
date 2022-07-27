@@ -1,5 +1,7 @@
-<%= form_with url: "/pings", method: "post",  data: {controller: "ping-form", turbo_action: "advance"} do |form| %>
-  <div>
-    <%= form.submit "Search",data: {action: "input->ping-form#search"} %>
-  </div>
-<% end %>
+<div style="margin-top: 1rem;">
+  <%= form_with  url: "/pings", method: "post", data: {controller: "ping-form"} do |form| %>
+    <%= form.submit 'Create new ping', data: {action: "click->ping-form#ping"}%>
+  <% end %>
+  <turbo-frame id="ping-time">
+  </turbo-frame>
+</div>

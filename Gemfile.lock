@@ -117,6 +117,7 @@ GEM
       digest
       net-protocol
       strscan
+    net-ping (2.0.8)
     net-pop (0.1.1)
       digest
       net-protocol
@@ -219,6 +220,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  net-ping
   puma (~> 5.0)
   rails (~> 7.0.3)
   selenium-webdriver
