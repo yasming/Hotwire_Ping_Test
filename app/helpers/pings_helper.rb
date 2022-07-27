@@ -1,7 +1,12 @@
 module PingsHelper
   def get_duration
-    check = Net::Ping::HTTP.new('http://localhost:3000')
-    return check.duration if check.ping?
-    'ping could not be done'
+    ping = get_ping
+    return ping.duration if ping.ping
+    'ping could not be sent'
+  end
+
+  private
+  def get_ping
+    Net::Ping::HTTP.new(request.base_url)
   end
 end
