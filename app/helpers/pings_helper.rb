@@ -2,7 +2,7 @@ module PingsHelper
   def get_duration
     ping = get_ping
     return ping.duration if ping.ping
-    'ping could not be sent'
+    t('pings.ping_not_sent')
   end
 
   private

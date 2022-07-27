@@ -31,3 +31,5 @@
 
 en:
   hello: "Hello world"
+  pings:
+    ping_not_sent: 'ping could not be sent'
