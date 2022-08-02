@@ -3,7 +3,8 @@ This project uses rails hotwire to show the ping time from server from one to on
 
 ## Problem
 ```
-User needs to press a button, then when the button is pressed it should ping the server once a second and display the time in milliseconds without refresh the page
+User needs to press a button, then when the button is pressed it should ping the server 
+once a second and display the time in milliseconds without refresh the page
 ```
 ## Solution
 - Install ```gem "turbo-rails"```
